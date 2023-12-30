@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 void main() {
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+=======
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+>>>>>>> 48e7030cce47f987516fff4b9e7a3f55a63763fc
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       
       appBar: AppBar(
         leading: const Icon(
@@ -42,11 +55,23 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Todo list"),
         actions: const[
           IconButton(
+=======
+      appBar: AppBar(
+      leading :const Icon(
+      Icons.arrow_back_ios_rounded ,
+    ),
+        backgroundColor: Colors.white,
+        centerTitle:true,
+        title:const Text("Todo list"),
+          actions: [
+          const IconButton(
+>>>>>>> 48e7030cce47f987516fff4b9e7a3f55a63763fc
             onPressed: null,
             icon: Icon(
               Icons.more_vert,
             ),
           )
+<<<<<<< HEAD
         ],
       ),
       body: Center(
@@ -482,24 +507,48 @@ Container(
             const SizedBox(height: 20), // Add spacing between text field and button
             ElevatedButton(
               onPressed: null,
+=======
+          ]
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset('asset/sticktodo.png'),
+            ElevatedButton(
+              onPressed:null,
+>>>>>>> 48e7030cce47f987516fff4b9e7a3f55a63763fc
               style: ButtonStyle(
                 shape: MaterialStateProperty.all<OutlinedBorder>(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(0),
                   ),
                 ),
+<<<<<<< HEAD
                 backgroundColor:
                     MaterialStateProperty.all<Color>(const Color.fromARGB(255, 247, 6, 18)),
+=======
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    Color.fromARGB(255, 247, 6, 18)),
+>>>>>>> 48e7030cce47f987516fff4b9e7a3f55a63763fc
               ),
               child: const Text(
                 'Create Task',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.white),
+<<<<<<< HEAD
               ),
             ),
           ],
         ),
       ),
+=======
+              ))
+          ],
+        ),
+      ),
+
+>>>>>>> 48e7030cce47f987516fff4b9e7a3f55a63763fc
     );
   }
 }
